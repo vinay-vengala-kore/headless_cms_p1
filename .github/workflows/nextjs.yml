@@ -14,11 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # Detect package manager and set up Node.js
+      # Setup Node.js with the latest LTS version
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '14' # Or specify the version you need
+          node-version: 'lts' # This installs the latest LTS version of Node.js
 
       # Install dependencies
       - name: Install dependencies
