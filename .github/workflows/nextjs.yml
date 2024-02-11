@@ -14,11 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # Setup Node.js with the latest LTS version
+      # Setup Node.js with the specified version
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts' # This installs the latest LTS version of Node.js
+          node-version: '20.11.0'  # Replace with the desired Node.js version
 
       # Install dependencies
       - name: Install dependencies
